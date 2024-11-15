@@ -1,0 +1,51 @@
+﻿<Window x:Class="KumysWarehouse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Складской учет" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <!-- Вкладка Сырье -->
+            <TabItem Header="Сырье">
+                <Border Background="#FFFFFF" BorderBrush="#FFC29A3A" 
+                        BorderThickness="5" CornerRadius="10" Margin="10">
+                    <StackPanel>
+                        <DataGrid x:Name="RawMaterialsGrid" AutoGenerateColumns="True" 
+                                  Height="300" Margin="10" />
+                        <Button Content="Добавить сырье" Click="AddRawMaterial_Click" 
+                                Width="200" Margin="10" 
+                                Background="#FF003366" Foreground="White" FontWeight="Bold" />
+                    </StackPanel>
+                </Border>
+            </TabItem>
+
+            <!-- Вкладка Продукция -->
+            <TabItem Header="Продукция">
+                <Border Background="#FFFFFF" BorderBrush="#FFC29A3A" 
+                        BorderThickness="5" CornerRadius="10" Margin="10">
+                    <StackPanel>
+                        <DataGrid x:Name="ProductsGrid" AutoGenerateColumns="True" 
+                                  Height="300" Margin="10" />
+                        <Button Content="Добавить продукцию" Click="AddProduct_Click" 
+                                Width="200" Margin="10" 
+                                Background="#FF003366" Foreground="White" FontWeight="Bold" />
+                    </StackPanel>
+                </Border>
+            </TabItem>
+
+            <!-- Вкладка Операции -->
+            <TabItem Header="Операции">
+                <Border Background="#FFFFFF" BorderBrush="#FFC29A3A" 
+                        BorderThickness="5" CornerRadius="10" Margin="10">
+                    <StackPanel>
+                        <DataGrid x:Name="TransactionsGrid" AutoGenerateColumns="True" 
+                                  Height="300" Margin="10" />
+                        <Button Content="Добавить операцию" Click="AddTransaction_Click" 
+                                Width="200" Margin="10" 
+                                Background="#FF003366" Foreground="White" FontWeight="Bold" />
+                    </StackPanel>
+                </Border>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
+

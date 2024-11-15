@@ -1,0 +1,30 @@
+﻿<Window x:Class="KumysWarehouse.AddRawMaterialWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить сырье" Height="300" Width="400"
+        Background="#FFF5F5DC">
+    <Grid>
+        <Border Background="#FFFFFF" BorderBrush="#FFC29A3A" BorderThickness="5" CornerRadius="10" Margin="10">
+            <StackPanel Margin="10">
+                <TextBlock Text="Добавить новое сырье" 
+                           HorizontalAlignment="Center" 
+                           FontSize="20" 
+                           FontWeight="Bold" 
+                           Foreground="#FF003366"
+                           Margin="0,0,0,10" />
+
+                <Label Content="Название:" FontWeight="Bold" />
+                <TextBox x:Name="NameTextBox" />
+
+                <Label Content="Количество:" FontWeight="Bold" />
+                <TextBox x:Name="QuantityTextBox" />
+
+                <Label Content="Единица измерения:" FontWeight="Bold" />
+                <TextBox x:Name="UnitTextBox" />
+
+                <Button Content="Сохранить" Click="SaveButton_Click" Margin="10" Width="150" HorizontalAlignment="Center"
+                        Background="#FF003366" Foreground="White" FontWeight="Bold" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
